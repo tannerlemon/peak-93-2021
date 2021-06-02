@@ -1,38 +1,203 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: boldText;
+  src: url("./fonts/SFUIText-Bold.ttf");
+}
+@font-face {
+  font-family: regularText;
+  src: url("./fonts/SFUIText-Regular.ttf");
+}
+@font-face {
+  font-family: blackText;
+  src: url("./fonts/SFUIText-Heavy.ttf");
+}
+@font-face {
+  font-family: mediumText;
+  src: url("./fonts/SFUIText-Medium.ttf");
+}
+@font-face {
+  font-family: semiboldText;
+  src: url("./fonts/SFUIText-Semibold.ttf");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #2e3738;
+  color: #fff;
+  font-family: regularText;
+  line-height: 1em;
+  transition: 0.5s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  font-size: 64px;
+  font-family: blackText;
+}
+
+.h1Char:hover {
+  cursor: default;
+  font-size: 73px;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: mediumText;
+  line-height: 43px;
+  transition: 0.7s ease;
+}
+
+.h2Char:hover {
+  cursor: default;
+  font-size: 43px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.pChar:hover {
+  cursor: default;
+  font-size: 23px;
+}
+
+a {
+  color: #e2c426;
+  text-decoration: none;
+}
+
+.menuToggle {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 50px 30px;
+  cursor: pointer;
+  width: 10vw;
+}
+
+.menuChar:hover {
+  font-size: 23px;
+}
+
+.toggleBar {
+  background: #fff;
+  width: 20px;
+  height: 3px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  margin-right: 13px;
+}
+
+.toggleBar:hover {
+  width: 22px;
+  height: 3.2px;
+}
+
+.leftLogoHolder {
+  height: 90vh;
+  width: 10vw;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.leftLogo {
+  max-height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.topLogoHolder {
+  max-height: 10vh;
+  max-width: 300px;
+  position: absolute;
+  top: -10px;
+  right: 0;
+}
+
+.introWrapper {
+  width: 355px;
+  margin: auto;
+  text-align: right;
+  padding-top: 10vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+}
+
+.subtitle {
+  width: 355px;
+}
+
+button {
+  border: none;
+  background-color: #e2c426;
+  border-radius: 4px;
+  color: #2e3738;
+  font-size: 24px;
+  font-family: boldText;
+  width: 325px;
+  outline: none;
+  cursor: pointer;
+  padding: 23px;
+  transition: 0.5s ease;
+  margin-bottom: 23px;
+}
+
+button:hover {
+  padding: 25px;
+}
+
+.second {
+  padding-top: 0;
+}
+
+/* Contact */
+.contactForm {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: left;
+}
+
+label {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.64px;
+}
+
+input,
+textarea {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: transparent;
+  font-size: 24px;
+  padding: 10px;
+  margin-bottom: 14px;
+  margin-top: 7px;
+}
+
+.appreciate {
+  width: 336px;
+}
+
+/* Home */
+.heroWrapper {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.sectionWrapper {
+  padding: 75px 11vw;
+}
+
+.centered {
+  text-align: center;
 }
