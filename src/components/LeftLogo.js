@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../imgs/white-logo.png";
+import logo from "../imgs/white-logo-vertical.png";
 
 export default function LeftLogo() {
   return (

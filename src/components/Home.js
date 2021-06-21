@@ -1,19 +1,21 @@
 import React from "react";
 import TopLogo from "./TopLogo";
-import image from "../imgs/1.png";
+import Vimeo from "@u-wave/react-vimeo";
 
 export default function Home() {
   return (
     <div>
       <TopLogo />
-      <div
-        className="heroWrapper"
-        style={{
-          backgroundImage: `url(${image})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
+      <Vimeo
+        className="Vimeo"
+        video="https://vimeo.com/558107738"
+        background
+        autoplay
+        loop
+        responsive
+      />
+
+      <div className="heroWrapper">
         <div className="heroText">
           <h1>Electronic Media Company</h1>
           <h2>Video • Web • More</h2>
