@@ -363,8 +363,12 @@ function App() {
           <div className="toggleBar"></div>
         </div>
         <div className="menuToggleTitle">
-          {menuTitle.split("").map((char) => {
-            return <span className="menuChar">{char}</span>;
+          {menuTitle.split("").map((char, i) => {
+            return (
+              <span key={i} className="menuChar">
+                {char}
+              </span>
+            );
           })}
         </div>
       </div>

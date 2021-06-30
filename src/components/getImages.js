@@ -46,8 +46,7 @@ export default function getImages(photos, pageNumber) {
     });
     setHasMore(photoData.length > 0);
     setLoading(false);
-    console.log(pageNumber);
   }, [pageNumber]);
-  console.log(images);
+
   return { loading, error, images, hasMore };
 }

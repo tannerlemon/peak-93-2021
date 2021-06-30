@@ -7,10 +7,14 @@ import getImages from "./getImages";
 export default function Photography({ photos, setPhotos }) {
   const [pageNumber, setPageNumber] = useState(1);
   const { images, loading, hasMore, error } = getImages(photos, pageNumber);
+  const [imageList, setImageList] = useState(images);
+  useEffect(() => {
+    setImageList(images);
+  }, [images]);
   return (
-    <div>
-      {images.map((image) => {
-        <img src={image.url} alt={image.description} />;
+    <div className="images">
+      {imageList.map((image, i) => {
+        return <img key={i} src={image.url} alt={image.description} />;
       })}
     </div>
   );
