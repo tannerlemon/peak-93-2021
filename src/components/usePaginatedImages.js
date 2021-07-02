@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function getImages(photos, pageNumber) {
+export default function usePaginatedImages(photos, pageNumber) {
   const photoData = photos;
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -23,14 +23,7 @@ export default function getImages(photos, pageNumber) {
 
       chunkArray.forEach((chunk, i) => {
         paginatedDataObject[i + 1] = chunk;
-        //   console.log(paginatedDataObject[i + 1]);
       });
-
-      // console.log(paginatedDataObject);
-
-      // setDataStartingIndex(itemsPerPage);
-      // setPageData(paginatedDataObject);
-      // setCurrentClickedNumber(page);
     };
 
     determineNumberOfPages();
@@ -44,7 +37,7 @@ export default function getImages(photos, pageNumber) {
     setImages((prevImages) => {
       return [...new Set([...prevImages, paginateImages(pageNumber)])];
     });
-    setHasMore(photoData.length > 0);
+    setHasMore(images.flat().length !== photoData.length);
     setLoading(false);
   }, [pageNumber]);
 

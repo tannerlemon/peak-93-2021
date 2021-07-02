@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Google
+REACT_APP_GOOGLE_DRIVE_API_KEY=AIzaSyDCCLAAbkfyMUGylJDqK3d6Iy-4SVrt_eo
+REACT_APP_GOOGLE_DRIVE_CLIENT_ID=191690633127-jj5ercaimrjq8rpq7sbholn7ouqhrphi.apps.googleusercontent.com
