@@ -41,9 +41,9 @@ export default function Photography({ photos, setPhotos }) {
                 return photo1.order - photo2.order;
               })
               .map((image, index) => {
+                // eslint-disable-next-line
                 if (!image) return;
                 if (imageList.flat().length === index + 1) {
-                  console.log(image);
                   return (
                     <img
                       ref={lastImageRef}

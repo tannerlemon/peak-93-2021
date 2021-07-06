@@ -54,12 +54,13 @@ function App() {
         <Route exact path="/projects">
           <Projects
             videos={videos}
+            setVideos={setVideoState}
             filteredVideos={filteredVideos}
             setFilteredVideos={setFilteredVideos}
           />
         </Route>
         <Route exact path="/photography">
-          <Photography photos={photos} />
+          <Photography photos={photosState} setPhotos={setPhotosState} />
         </Route>
       </Switch>
     </div>
