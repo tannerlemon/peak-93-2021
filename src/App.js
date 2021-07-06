@@ -10,7 +10,6 @@ import Menu from "./components/Menu";
 import Photography from "./components/Photography";
 import videos from "./VideoData.js";
 import photos from "./PhotoData.js";
-import { gapi } from "gapi-script";
 
 function App() {
   const [videoState, setVideoState] = useState(videos);

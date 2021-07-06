@@ -35,24 +35,29 @@ export default function Photography({ photos, setPhotos }) {
       <ResponsiveMasonry columnsCountBreakPoints={{ 400: 1, 750: 2, 900: 3 }}>
         <Masonry>
           {imageList.flat().length &&
-            imageList.flat().map((image, index) => {
-              if (!image) return;
-              if (imageList.flat().length === index + 1) {
-                console.log(image);
-                return (
-                  <img
-                    ref={lastImageRef}
-                    key={index}
-                    src={image.url}
-                    alt={image.description}
-                  />
-                );
-              } else {
-                return (
-                  <img key={index} src={image.url} alt={image.description} />
-                );
-              }
-            })}
+            imageList
+              .flat()
+              .sort(function (photo1, photo2) {
+                return photo1.order - photo2.order;
+              })
+              .map((image, index) => {
+                if (!image) return;
+                if (imageList.flat().length === index + 1) {
+                  console.log(image);
+                  return (
+                    <img
+                      ref={lastImageRef}
+                      key={index}
+                      src={image.url}
+                      alt={image.description}
+                    />
+                  );
+                } else {
+                  return (
+                    <img key={index} src={image.url} alt={image.description} />
+                  );
+                }
+              })}
         </Masonry>
       </ResponsiveMasonry>
       <div>{loading && "Loading..."}</div>
