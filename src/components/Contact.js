@@ -5,8 +5,8 @@ export default function Contact() {
   const business = "Let's talk business.";
   const subtitle =
     "We appreciate your visit to our website. We look forward to hearing from you. Give us a call, email us, or fill out this form... whatever is convenient for you.";
-  const phone = "(330) 546-5342";
-  const email = "tanrlemn@gmail.com";
+  const phone = "(330) 316-2052";
+  const email = "peak93media@gmail.com";
 
   return (
     <div>
