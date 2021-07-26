@@ -19,7 +19,7 @@ export default function Menu({ showMenu, setShowMenu }) {
           <ul>
             <Link
               className="menuLink"
-              to="/home"
+              to="/"
               onClick={() => setShowMenu(false)}
             >
               <li>Home</li>
@@ -31,13 +31,7 @@ export default function Menu({ showMenu, setShowMenu }) {
             >
               <li>Projects</li>
             </Link>
-            <Link
-              className="menuLink"
-              to="/project-types"
-              onClick={() => setShowMenu(false)}
-            >
-              <li>Project Types</li>
-            </Link>
+
             <Link
               className="menuLink"
               to="/photography"

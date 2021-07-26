@@ -17,15 +17,15 @@ export default function Nav() {
         <Link to="/projects">
           <button className="button">See projects</button>
         </Link>
-        <Link to="/project-types">
+        <Link to="/projects">
           <button className="button">View project types</button>
         </Link>
         <Link to="/photography">
           <button className="button">See photography</button>
         </Link>
-        <Link to="/home">
+        {/* <Link to="/home">
           <button className="button">Go home</button>
-        </Link>
+        </Link> */}
         <Link to="/contact">
           <button className="button">Contact us</button>
         </Link>

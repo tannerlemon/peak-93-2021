@@ -31,6 +31,18 @@ export default function Home() {
           competitive and our service is top tier. <br /> Let’s get to work!
         </p>
       </div>
+      <div className="typeHolder">
+        <h2>Business</h2>
+        <p>Attract the right people and grow your business</p>
+        <Vimeo
+          className="Vimeo"
+          video="https://vimeo.com/558100946"
+          background
+          autoplay
+          loop
+          responsive
+        />
+      </div>
     </div>
   );
 }

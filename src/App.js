@@ -22,22 +22,24 @@ function App() {
   return (
     <div className="App">
       <Menu showMenu={showMenu} setShowMenu={setShowMenu} />
-      <div className="menuToggle" onClick={() => setShowMenu(true)}>
-        <div className="toggleBarHolder">
-          <div className="toggleBar"></div>
-          <div className="toggleBar"></div>
-          <div className="toggleBar"></div>
+      {!showMenu && (
+        <div className="menuToggle" onClick={() => setShowMenu(true)}>
+          <div className="toggleBarHolder">
+            <div className="toggleBar"></div>
+            <div className="toggleBar"></div>
+            <div className="toggleBar"></div>
+          </div>
+          <div className="menuToggleTitle">
+            {menuTitle.split("").map((char, i) => {
+              return (
+                <span key={i} className="menuChar">
+                  {char}
+                </span>
+              );
+            })}
+          </div>
         </div>
-        <div className="menuToggleTitle">
-          {menuTitle.split("").map((char, i) => {
-            return (
-              <span key={i} className="menuChar">
-                {char}
-              </span>
-            );
-          })}
-        </div>
-      </div>
+      )}
       <Switch>
         <Route exact path="/">
           <Hello />

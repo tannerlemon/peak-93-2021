@@ -84,6 +84,8 @@ a {
   padding: 50px 30px;
   cursor: pointer;
   width: 10vw;
+  position: relative;
+  z-index: 100;
 }
 
 .menuChar:hover {
@@ -205,6 +207,7 @@ textarea {
   padding-bottom: 50px;
   position: absolute;
   top: 0;
+  z-index: 1;
 }
 
 .sectionWrapper {
@@ -277,6 +280,7 @@ textarea {
 
 .menuWrapper {
   display: flex;
+  z-index: 200;
 }
 
 .menuImg {
@@ -297,6 +301,11 @@ textarea {
 }
 
 /* Photography */
+
+/* Home */
+.typeHolder {
+  display: flex;
+}
 
 @media only screen and (max-width: 600px) {
   .leftLogoHolder {
