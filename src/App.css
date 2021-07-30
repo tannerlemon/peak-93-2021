@@ -149,7 +149,7 @@ button {
   background-color: #e2c426;
   border-radius: 4px;
   color: #2e3738;
-  font-size: 24px;
+  font-size: 20px;
   font-family: boldText;
   width: 325px;
   outline: none;
@@ -157,6 +157,7 @@ button {
   padding: 23px;
   transition: 0.5s ease;
   margin-bottom: 23px;
+  text-transform: uppercase;
 }
 
 button:hover {
