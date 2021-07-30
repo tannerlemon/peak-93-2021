@@ -36,7 +36,9 @@ export default function Projects({
       <TopLogo />
       <div className="filter">
         <h3 className="filterHeading">Filter</h3>
-
+        <button className="type" onClick={() => setFilteredVideos(videos)}>
+          view all
+        </button>
         {uniqueTypes.map((type) => {
           return (
             <button onClick={() => filterVideos(type)} className="type">
@@ -44,9 +46,6 @@ export default function Projects({
             </button>
           );
         })}
-        <button className="type" onClick={() => setFilteredVideos(videos)}>
-          view all
-        </button>
       </div>
       <div className="projectVideos">
         {filteredVideos

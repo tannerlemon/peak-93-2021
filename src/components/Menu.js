@@ -1,7 +1,6 @@
 import React from "react";
 import TopLogo from "./TopLogo";
 import { Link } from "react-router-dom";
-import alex from "../imgs/Alex1.jpeg";
 import exit from "../imgs/exit.png";
 
 export default function Menu({ showMenu, setShowMenu }) {
@@ -13,9 +12,6 @@ export default function Menu({ showMenu, setShowMenu }) {
         </div>
         <TopLogo />
         <div className="menuWrapper">
-          <div className="menuImg">
-            <img src={alex} alt="jumping to catch a football" />
-          </div>
           <ul>
             <Link
               className="menuLink"
