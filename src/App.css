@@ -20,12 +20,13 @@
 }
 
 body {
-  background: #2e3738;
+  background: #0b0f0f;
   color: #fff;
   font-family: regularText;
   line-height: 1em;
   transition: 0.5s ease;
   margin: 0;
+  text-transform: uppercase;
 }
 
 ul {
@@ -263,7 +264,7 @@ textarea {
   height: 100vh;
   position: absolute;
   z-index: 100;
-  background: #2e3738;
+  background: #0b0f0f;
   display: flex;
   justify-content: center;
   align-items: center;
