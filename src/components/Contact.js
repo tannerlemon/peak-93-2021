@@ -22,7 +22,7 @@ export default function Contact() {
           {email}
         </a>
         <p className="appreciate">{subtitle}</p>
-        <form className="contactForm">
+        <form className="contactForm" netlify>
           <label>Name</label>
           <input type="text" />
           <label>Email</label>
